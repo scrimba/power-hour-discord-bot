@@ -3,7 +3,7 @@ const Discord = require('discord.js')
 const bot = new Discord.Client()
 bot.login(process.env.POWER_HOUR_BOT_DISCORD_TOKEN)
 
-const message = `Hello, @PowerHourPeeps 👋
+const multiLinedMessage = `Hello, @PowerHourPeeps 👋
 
 Screensharing or webcam on, microphones off, let's focus! The Power Hour begins NOW`
 
@@ -16,7 +16,7 @@ bot.on('ready', async () => {
     const powerHourTextChannel = await bot
       .channels
       .fetch(process.env.POWER_HOUR_BOT_TEXT_CHANNEL_ID) 
-    await powerHourTextChannel.send(message)
+    await powerHourTextChannel.send(multiLinedMessage)
 
     await powerHourChannel.overwritePermissions([
       {

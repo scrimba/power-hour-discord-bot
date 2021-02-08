@@ -15,7 +15,7 @@ bot.on('ready', async () => {
       .channels
       .fetch(process.env.POWER_HOUR_BOT_TEXT_CHANNEL_ID) 
 
-    // await powerHourTextChannel.send("That is it folks, the power hour channel is over!")
+    await powerHourTextChannel.send("That is it folks, that is the power hour over!")
 
     await powerHourChannel.overwritePermissions([
       {
@@ -28,7 +28,6 @@ bot.on('ready', async () => {
       await member.voice.kick()
       done()
     }))
-    // await powerHourChannel.members.each(member => member.voice.kick())
     await Promise.all(promises)
 
     process.exit(0)
