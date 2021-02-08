@@ -11,7 +11,7 @@ bot.on('ready', async () => {
       .channels
       .fetch(process.env.POWER_HOUR_BOT_TEXT_CHANNEL_ID) 
 
-    powerHourTextChannel.send("Power Hour starting in T-minus 60 minutes")
+    await powerHourTextChannel.send("Power Hour starting in T-minus 60 minutes")
     process.exit(0)
   } catch (error) {
     console.error(error)
