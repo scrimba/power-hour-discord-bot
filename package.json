@@ -1,0 +1,10 @@
+{
+  "name": "discord-powerhour-bot",
+  "main": "index.js",
+  "author": "Alex Booker <alex@scrimba.com>",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "dotenv": "^8.2.0"
+  }
+}
