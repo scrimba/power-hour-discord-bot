@@ -1,3 +1,5 @@
+#!/usr/bin/env node 
+
 const Discord = require('discord.js')
 
 const bot = new Discord.Client()
