@@ -17,7 +17,8 @@ bot.on('ready', async () => {
       .channels
       .fetch(process.env.POWER_HOUR_BOT_TEXT_CHANNEL_ID) 
 
-    await powerHourTextChannel.send("That is it folks, that is the power hour over!")
+    const message = await powerHourTextChannel.send("Power Hour OVER 👋")
+    await message.react('👋')
 
     await powerHourChannel.overwritePermissions([
       {
