@@ -5,9 +5,7 @@ const Discord = require('discord.js')
 const bot = new Discord.Client()
 bot.login(process.env.POWER_HOUR_BOT_DISCORD_TOKEN)
 
-const multiLinedMessage = `Hello, @PowerHourPeeps 👋
-
-Screensharing or webcam on, microphones off, let's focus! The Power Hour begins NOW`
+const multiLinedMessage = `<@&${process.env.POWER_HOUR_PEEPS_ROLE_ID}> Screensharing or webcam on, microphone muted, let's focus! Power Hour starts NOW`
 
 bot.on('ready', async () => {
   try {
