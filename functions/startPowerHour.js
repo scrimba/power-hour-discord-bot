@@ -24,6 +24,7 @@ bot.on('ready', async () => {
       {
         id: process.env.POWER_HOUR_BOT_EVERYONE_ROLE_ID,
         allow: ['CONNECT'],
+        deny: ['SPEAK'],
       },
     ]);
 
