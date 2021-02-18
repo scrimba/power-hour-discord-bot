@@ -19,6 +19,7 @@ bot.on('ready', async () => {
 
     const message = await powerHourTextChannel.send("Power Hour OVER 👋")
     await message.react('👋')
+    await powerHourTextChannel.send("Learn more about the Power Hour @ https://scrimba.com/powerhour, and we hope to see you next time!")
 
     await powerHourChannel.overwritePermissions([
       {

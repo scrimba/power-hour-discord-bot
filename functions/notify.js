@@ -11,7 +11,7 @@ bot.on('ready', async () => {
       .channels
       .fetch(process.env.POWER_HOUR_BOT_TEXT_CHANNEL_ID) 
 
-    await powerHourTextChannel.send(`<@&${process.env.POWER_HOUR_PEEPS_ROLE_ID}> Power Hour starting in T-00:05:00 🚀 Learn more @ https://scrimba.com/powerhour`)
+    await powerHourTextChannel.send(`<@&${process.env.POWER_HOUR_PEEPS_ROLE_ID}> Power Hour launching in T-01:00:00 🚀`)
     process.exit(0)
   } catch (error) {
     console.error(error)
