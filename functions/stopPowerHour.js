@@ -23,9 +23,14 @@ bot.on('ready', async () => {
 
     await powerHourChannel.overwritePermissions([
       {
-        id: process.env.POWER_HOUR_BOT_EVERYONE_ROLE_ID,
-        deny: ['CONNECT', 'VIEW_CHANNEL'],
+        id: process.env.POWER_HOUR_BOT_ONBOARDED_ROLE_ID,
+        allow: ['VIEW_CHANNEL'],
+        deny: ['CONNECT'],
       },
+      {
+        id: process.env.POWER_HOUR_BOT_EVERYONE_ROLE_ID,
+        deny: ['VIEW_CHANNEL'],
+      }
     ]);
 
     const promises = powerHourChannel.members.map(member => new Promise(async done => {
