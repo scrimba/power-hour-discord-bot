@@ -15,9 +15,13 @@ const bot = new Discord.Client()
 bot.login(POWER_HOUR_BOT_DISCORD_TOKEN)
 
 bot.on('ready', async () => {
-  cron.schedule('0 14 * * 1-5', notify)
-  cron.schedule('0 15 * * 1-5', start)
-  cron.schedule('0 16 * * 1-5', stop)
+  cron.schedule('0 13 * * 1-5', notify)
+  cron.schedule('0 14 * * 1-5', start)
+  cron.schedule('0 15 * * 1-5', stop)
+
+  cron.schedule('0 17 * * 1-5', notify)
+  cron.schedule('0 18 * * 1-5', start)
+  cron.schedule('0 19 * * 1-5', stop)
 })
 
 const start = async () => {
