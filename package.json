@@ -5,6 +5,7 @@
   "license": "ISC",
   "dependencies": {
     "discord.js": "^12.5.1",
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "node-cron": "^3.0.0"
   }
 }
