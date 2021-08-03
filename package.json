@@ -3,6 +3,9 @@
   "main": "index.js",
   "author": "Alex Booker <alex@scrimba.com>",
   "license": "ISC",
+  "scripts": {
+    "start": "node source/index.js"
+  },
   "dependencies": {
     "discord.js": "^12.5.1",
     "dotenv": "^8.2.0",
