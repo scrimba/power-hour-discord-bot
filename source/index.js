@@ -27,7 +27,7 @@ bot.on('ready', async () => {
   cron.schedule('0 18 * * 1-5', start)
   cron.schedule('0 19 * * 1-5', stop)
 
-  cron.schedule('0 12 * * 1-5', notify)
+  cron.schedule('0 21 * * 1-5', notify)
   cron.schedule('0 22 * * 1-5', start)
   cron.schedule('0 23 * * 1-5', stop)
 })
