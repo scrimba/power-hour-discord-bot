@@ -66,7 +66,6 @@ const stop = async () => {
     .fetch(POWER_HOUR_BOT_TEXT_CHANNEL_ID) 
 
   const message = await powerHourTextChannel.send("Power Hour OVER 👋")
-  await message.react('💯')
   await powerHourTextChannel.send("⚠️  Learn more about the power hour and NEW POWER HOUR TIMES: https://scrimba.com/powerhour  ")
 
   await powerHourChannel.overwritePermissions([
